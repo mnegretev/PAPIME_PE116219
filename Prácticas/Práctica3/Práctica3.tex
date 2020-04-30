@@ -26,7 +26,7 @@
 \subsection{Movimiento rígido}
 Para entender el movimiento en los robots bípedos, es necesario comprender primero los conceptos de movimiento rígido y transformación homogénea. Un movimiento rígido es una combinación de una posición y una orientación, es decir es un par ordenado $(d,R)$, donde $d\in \mathbb{R}^3$ y $R\in SO(3)$.
 
-El conjunto $SO(3)$ se refiere al conjunto de matrices ortogonales de orden 3 (del inglés \textit{Special Orthogonal}). Las matrices del conjunto $SO(n)$ tienen varias propiedades especiales como el hecho de que su inversa es igual a su transpuesta, todos sus renglones y columnas son de magnitud 1 y ortogonales entre sí y que su determinante es siempre 1, si estas representan rotaciones de sistemas dextrógiros.
+El conjunto $SO(3)$ se refiere al conjunto de matrices ortogonales de orden 3 (del inglés \textit{Special Orthogonal}). Las matrices del conjunto $SO(n)$ tienen varias propiedades especiales como el hecho de que su inversa es igual a su transpuesta, todos sus renglones y columnas son de magnitud 1 y ortogonales entre sí y que su determinante es siempre 1 (esto último si estas representan rotaciones de sistemas dextrógiros).
 
 Entonces, un movimiento rígido es una combinación de una posición y una orientación. Estos movimientos también pueden ser usados para representar la Transformación de un sistema coordenado a otro, es decir, el par $(d, R)$ puede representar una rotación y una traslación. Es importante mencionar que, aunque la rotación $R$ puede darse sobre cualquier eje, en general siempre se manejan rotaciones sobre alguno de los ejes coordenados, por lo que $R$, en general, tiene alguna de las siguientes formas:
 \[R_{x,\theta} = \left[
